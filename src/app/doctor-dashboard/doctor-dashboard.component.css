@@ -1,0 +1,20 @@
+.table-dark {
+  margin-right: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  text-align: left;
+}
+
+a:hover {
+  background-color: #f4f4f4;
+}
+
+a {
+  cursor: pointer;
+}

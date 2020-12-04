@@ -1,0 +1,41 @@
+<div class="card col-md-4 offset-md-4 mt-3" >
+  <h3>Update Patient</h3>
+<div style="width: 100% ;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="patientId">Patient's Id</label>
+      <input type="text" class="form-control" id="patientId" required [(ngModel)]="patient.patientId" value="{{patient.patientId}}" name="patientId" #patientId>
+    </div>
+    <div class="form-group">
+      <label for="patient_last_name">Patient's First Name</label>
+      <input type="text" class="form-control" id="patient_last_name" required [(ngModel)]="patient.patient_first_name" name="patient_last_name"  #patientId>
+    </div>
+    <div class="form-group">
+      <label for="doctorSpeciality">Patient's Last Name</label>
+      <input type="text" class="form-control" id="patient_last_name" required [(ngModel)]="patient.patient_last_name" name="patient_last_name">
+    </div>
+    <div class="form-group">
+      <label for="patientAge">Patient's Age</label>
+      <input type="text" class="form-control" id="patientAge" required [(ngModel)]="patient.patientAge" name="patientAge">
+    </div>
+    <div class="form-group">
+      <label for="patientEmail">Patient's Email</label>
+      <input type="text" class="form-control" id="patientEmail" required [(ngModel)]="patient.patientEmail" name="patientEmail">
+    </div>
+    <div class="form-group">
+      <label for="patientGender">Patient's Gender</label>
+      <input type="text" class="form-control" id="patientGender" required [(ngModel)]="patient.patientGender" name="patientGender">
+    </div>
+    <div class="form-group">
+      <label for="patientEmail">Patient Email</label>
+      <input type="text" class="form-control" id="patientEmail" required [(ngModel)]="patient.patientEmail" name="patientEmail">
+    </div>
+    <div class="form-group">
+      <label for="patientPassword">Patient Password</label>
+      <input type="password" class="form-control" id="patientPassword" required [(ngModel)]="patient.patientPassword" name="patientPassword">
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+
+</div>

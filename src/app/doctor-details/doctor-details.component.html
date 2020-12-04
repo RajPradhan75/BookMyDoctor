@@ -1,0 +1,21 @@
+<h2>Doctor Details</h2>
+
+<hr/>
+<div *ngIf="doctor">
+  <div>
+    <label><b>Doctor Name: </b></label> {{doctor.doctorName}}
+  </div>
+  <div>
+    <label><b>Doctor Speciality: </b></label> {{doctor.doctorSpeciality}}
+  </div>
+  <div>
+    <label><b>Doctor Profile: </b></label>  {{doctor.doctorProfile}}
+  </div>
+  <div>
+    <label><b>Doctor Qualification: </b></label> {{doctor.doctorQualification}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Doctor's List</button><br>

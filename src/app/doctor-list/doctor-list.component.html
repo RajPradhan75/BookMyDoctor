@@ -1,0 +1,103 @@
+<!-- <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Doctors List</h2>
+  </div> -->
+<!-- <div class="panel-body" >
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Doctor Name</th>
+          <th>Doctor Profile</th>
+          <th>Doctor Qualification</th>
+          <th>Doctor Speciality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doctor of doctors | async">
+          <td>{{doctor.doctorName}}</td>
+          <td>{{doctor.doctorProfile}}</td>
+          <td>{{doctor.doctorQualification}}</td>
+          <td>{{doctor.doctorSpeciality}}</td>
+          <td>
+            <button (click)="addDoctor()" class="btn btn-info" style="margin-left: 10px" >Add</button>
+            <br><br>
+            <button (click)="deleteDoctor(doctor.doctorId)" class="btn btn-danger" style="margin-left: 10px" >Delete</button>
+            <br><br>
+            <button (click)="updateDoctor()" class="btn btn-info" style="margin-left: 10px">Update</button>
+            <br><br>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js">
+  <title>Doctor List</title>
+
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header">
+      Doctor's List
+    </div>
+    <div class="card-body" style="width: 100%;">
+      <div class="panel panel-primary">
+        <!-- <div class="panel-heading">
+          <h2>Doctors List</h2>
+        </div> -->
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> Name</th>
+                <th> Qualification</th>
+                <th> Speciality</th>
+                <th> Email</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let doctor of doctors">
+                <td>{{doctor.doctorName}}</td>
+                <td>{{doctor.doctorQualification}}</td>
+                <td>{{doctor.doctorSpeciality}}</td>
+                <td>{{doctor.doctorEmail}}</td>
+                <td>
+                  <button (click)="addDoctor()" class="btn btn-dark" style="margin-left: 10px"><i
+                      class="fas fa-user-plus"></i></button>
+                  <br><br>
+                  <button (click)="deleteDoctor(doctor.doctorId)" class="btn btn-danger" style="margin-left: 10px"><i
+                      class="fas fa-trash-alt"></i></button>
+                  <br><br>
+                  <!-- <button (click)="updateDoctor()" class="btn btn-secondary" style="margin-left: 10px"><i
+                      class="fas fa-pencil-alt"></i></button>
+                  <br><br> -->
+                  <button
+                    (click)="onUpdate(doctor.doctorId,doctor.doctorName,doctor.doctorSpeciality,doctor.doctorProfile,   doctor.doctorQualification,  doctor.doctorEmail,doctor.doctorPassword)"
+                    class="btn btn-secondary" style="margin-left: 10px"><i class="fas fa-pencil-alt"></i></button>
+                  <br><br>
+                  <!-- <button (click)="doctorDetails(doctor.doctorId)" class="btn btn-info" style="margin-left: 10px">Details</button> -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer style="position: fixed;">
+  <p>Quinnox Healthcare, Copyright &copy; 2020</p>
+</footer>
+
+</html>

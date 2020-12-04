@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 300px;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.mt-5 {
+  z-index: 100;
+}
+
+#boxes {
+  margin-left: 125px;
+}

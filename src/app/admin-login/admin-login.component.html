@@ -1,0 +1,23 @@
+<div class="card col-md-4 offset-md-4  mt-5">
+  <h3 style="text-align: center;">Admin Login</h3>&nbsp;&nbsp;
+  <div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="adminEmail">Admin Email Id:</label>
+        <input type="text" class="form-control" id="adminEmail" required [(ngModel)]="admin.adminEmail"
+          name="adminEmail">
+      </div>
+
+      <div class="form-group">
+        <label for="adminPassword">Admin Password:</label>
+        <input type="password" class="form-control" id="adminPassword" required [(ngModel)]="admin.adminPassword"
+          name="adminPassword">
+      </div>
+
+      <button type="submit" class="btn btn-dark">Login</button>
+    </form>
+  </div>
+</div>
+<footer>
+  <p>Quinnox Healthcare, Copyright &copy; 2020</p>
+</footer>

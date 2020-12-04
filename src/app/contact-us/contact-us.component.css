@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  text-align: center;
+  margin-left: 380px;
+  min-height: 100%;
+}
+
+li {
+  font-size: large;
+  font-weight: bold;
+}
+
+i {
+  size: 50px;
+}

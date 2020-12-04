@@ -1,0 +1,49 @@
+<div class="card col-md-8 offset-md-2 mt-5 card card-body" style=" border-color:rgb(88, 88, 88); border-width:2px;">
+  <form>
+    <h2 style="color: rgb(155, 154, 153);"> Search </h2>
+    <div class="form-group">
+      <input type="text" class="form-control" name="search" placeholder="Search by Doctors Speciality"
+        style="font-size: large;" [(ngModel)]="search">
+    </div>
+  </form>
+
+
+  <div class="card ">
+    <div class="card-header">
+      Doctor's List
+    </div>
+
+    <div class="card-body">
+      <div class="panel panel-primary">
+        <!-- <div class="panel-heading">
+          <h2>Doctors List</h2>
+        </div> -->
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> Doctor Id</th>
+                <th> Name</th>
+                <th> Qualification</th>
+                <th> Speciality</th>
+                <th> Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let doctor of doctors | doctorsearch:search ">
+                <td>{{doctor.doctorId}}</td>
+                <td>{{doctor.doctorName}}</td>
+                <td>{{doctor.doctorQualification}}</td>
+                <td>{{doctor.doctorSpeciality}}</td>
+                <td>{{doctor.doctorEmail}}</td>
+                <td>
+                  <button (click)="BookDoctor(doctor.doctorId,doctor.doctorName,doctor.doctorSpeciality)"
+                    class="btn btn-info" style="margin-left: 10px">Book</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

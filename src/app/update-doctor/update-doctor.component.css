@@ -1,0 +1,13 @@
+.mt-3 {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  min-height: 100vh;
+  margin-bottom: 1em;
+}
+
+.btn-dark {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #f4f4f4;
+  z-index: 9999;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+footer {
+  /* padding: 10px;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #191970;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 60px; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

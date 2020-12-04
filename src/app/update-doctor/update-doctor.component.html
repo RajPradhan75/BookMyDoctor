@@ -1,0 +1,38 @@
+<div class="card col-md-4 offset-md-4 mt-3" >
+  <h3>Update Doctor</h3>
+<div style="width: 100% ;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="doctorId"> Id</label>
+      <input type="text" class="form-control" id="doctorId" required [(ngModel)]="doctor.doctorId"  name="doctorId" #doctorId>
+    </div>
+    <div class="form-group">
+      <label for="doctorName"> Name</label>
+      <input type="text" class="form-control"  id="doctorName" value="{{doctor.doctorName}}" required [(ngModel)]="doctor.doctorName" name="doctorName"  #doctorId>
+    </div>
+    <div class="form-group">
+      <label for="doctorProfile">Profile</label>
+      <input type="text" class="form-control"  id="doctorProfile" required [(ngModel)]="doctor.doctorProfile" name="doctorProfile">
+    </div>
+    <div class="form-group">
+      <label for="doctorSpeciality">Speciality</label>
+      <input type="text" class="form-control" id="doctorSpeciality" value="{{doctor.doctorSpeciality}}"  required [(ngModel)]="doctor.doctorSpeciality" name="doctorSpeciality">
+    </div>
+    <div class="form-group">
+      <label for="doctorQualification">Qualification</label>
+      <input type="text" class="form-control" id="doctorQualification" value="{{doctor.doctorQualification}}" required [(ngModel)]="doctor.doctorQualification"  name="doctorQualification">
+    </div>
+    <div class="form-group">
+      <label for="doctorEmail">Email</label>
+      <input type="text" class="form-control" id="doctorEmail" value="{{doctor.doctorEmail}}" required [(ngModel)]="doctor.doctorEmail" name="doctorEmail">
+    </div>
+    <div class="form-group">
+      <label for="doctorPassword">Password</label>
+      <input type="password" class="form-control" id="doctorPassword" required [(ngModel)]="doctor.doctorPassword" name="doctorPassword">
+    </div>
+
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+
+</div>

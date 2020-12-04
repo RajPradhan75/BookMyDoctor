@@ -1,0 +1,24 @@
+.table-dark {
+  margin-right: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  text-align: left;
+}
+
+h5:hover {
+  color: grey;
+}
+
+h5 {
+  cursor: pointer;
+}
+
+h5 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

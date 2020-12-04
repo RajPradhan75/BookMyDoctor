@@ -1,0 +1,15 @@
+.footer {
+  /* margin-left: 0.1px;
+  margin-right: 0.1px;
+  width: 100%; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  text-align: left;
+}
+
+.placeholder {
+  margin-left: 70px;
+}

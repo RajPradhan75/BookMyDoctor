@@ -1,0 +1,49 @@
+<div class="card col-md-4 offset-md-4 mt-5">
+  <h4 style="text-align: center;">Create Patient</h4>
+
+  <div [hidden]="submitted" style="width: 100%;">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="patient_first_name">Patient's First Name</label>
+        <input type="text" class="form-control" id="patient_first_name" required
+          [(ngModel)]="patient.patient_first_name" name="patient_first_name">
+      </div>
+
+      <div class="form-group">
+        <label for="patient_last_name">Patient's Last Name</label>
+        <input type="text" class="form-control" id="patient_last_name" required [(ngModel)]="patient.patient_last_name"
+          name="patient_last_name">
+      </div>
+
+      <div class="form-group">
+        <label for="patientAge">Patient's Age</label>
+        <input type="text" class="form-control" id="patientAge" required [(ngModel)]="patient.patientAge"
+          name="patientAge">
+      </div>
+      <div class="form-group">
+        <label for="patientGender">Patient's Gender</label>
+        <input type="text" class="form-control" id="patientGender" required [(ngModel)]="patient.patientGender"
+          name="patientGender">
+      </div>
+
+      <div class="form-group">
+        <label for="patientEmail">Patient's Email</label>
+        <input type="text" class="form-control" id="patientEmail" required [(ngModel)]="patient.patientEmail"
+          name="patientEmail">
+      </div>
+      <div class="form-group">
+        <label for="patientPassword">Patient's Password</label>
+        <input type="password" class="form-control" id="patientEmail" required [(ngModel)]="patient.patientPassword"
+          name="patientPassword">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+</div>
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+
+</div>
+<footer>
+  <p>Quinnox Healthcare, Copyright &copy; 2020</p>
+</footer>

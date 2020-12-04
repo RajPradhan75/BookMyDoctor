@@ -1,0 +1,58 @@
+/* .card-body {
+  background-color: #f4f4f4;
+}
+
+ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+li ul {
+  display: none;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  padding: 10px 15px 10px 15px;
+  background: #1a1818;
+  margin-left: 1px;
+  white-space: nowrap;
+  font-size: 15 px;
+}
+
+ul li a:hover {
+  background: #617f8a;
+}
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+
+li:hover a {
+  background: #617f8a;
+}
+
+li:hover li a:hover {
+  background: #95a9b1;
+} */
+
+.dropdown {
+  margin-right: 4em;
+}

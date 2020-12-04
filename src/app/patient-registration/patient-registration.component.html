@@ -1,0 +1,56 @@
+<div class="card col-md-4 offset-md-4 mt-5">
+  <h3>Patient Registration</h3>
+  <div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="patientFirstName">Patient First Name</label>
+        <input type="text" class="form-control" id="patientfirstName" required [(ngModel)]="patient.patient_first_name"
+          name="patientfirstName">
+      </div>
+
+      <div class="form-group">
+        <label for="patientLastName">Patient Last Name</label>
+        <input type="text" class="form-control" id="patientLastName" required [(ngModel)]="patient.patient_last_name"
+          name="patientLastName">
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="patientGender">Patient Gender</label>
+        <input type="text" class="form-control" id="patientGender" required [(ngModel)]="patient.patientGender"
+          name="patientGender">
+      </div> -->
+
+      <div class="form-group">
+        <label for="patientGender">Select Gender:</label>
+        <select class="form-control" input type="text" class="form-control" id="patientGender" required
+          [(ngModel)]="patient.patientGender" name="patientGender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="patientAge">Patient Age</label>
+        <input type="text" class="form-control" id="patientAge" required [(ngModel)]="patient.patientAge"
+          name="patientAge">
+      </div>
+      <div class="form-group">
+        <label for="patientEmail">Patient Email</label>
+        <input type="text" class="form-control" id="patientEmail" required [(ngModel)]="patient.patientEmail"
+          name="patientEmail">
+      </div>
+      <div class="form-group">
+        <label for="patientPassword">Patient Password</label>
+        <input type="password" class="form-control" id="patientPassword" required [(ngModel)]="patient.patientPassword"
+          name="patientPassword">
+      </div>
+
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h4>Patient Registered successfully!</h4>
+  </div>
+</div>

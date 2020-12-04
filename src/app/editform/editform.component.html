@@ -1,0 +1,113 @@
+<!-- <form class="mt-5 pt-5 col-md-4 offset-md-4 " [formGroup]='doctorForm'>
+  <div class="display-4 ">Update Doctor</div>
+  <input type="hidden" class="form-control" name="id" id="id" formControlName='doctorId' pattern="[A-Za-z0-9]*">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="name" id="name" formControlName='doctorName' pattern="[A-Za-z0-9]*">
+  </div>
+
+  <div class="form-group">
+    <label for="speciality">Speciality</label>
+    <input type="text" class="form-control" name="speciality" id="speciality" formControlName='doctorSpeciality'>
+  </div>
+  <div class="form-group">
+    <label for="profile">Profile</label>
+    <input type="text" class="form-control" name="profile" id="profile" formControlName='doctorProfile'
+      pattern="[0-9]*">
+  </div>
+  <div class="form-group">
+    <label for="qualification">Qualification</label>
+    <input type="text" class="form-control" name="qualification" id="qualification"
+      formControlName='doctorQualification' pattern="[0-9]*">
+  </div>
+  <div class="form-group">
+    <label for="email">Emails</label>
+    <textarea class="form-control " name="email" id="email" formControlName='doctorEmail' rows="3 "></textarea>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <textarea class="form-control " name="password" id="password" formControlName='doctorPassword' rows="3 "></textarea>
+  </div>
+  <button type="submit" (click)="updateData(id.id,doctorForm.value)" class="btn btn-primary">Submit</button>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2 class="col-md-4 mt-4 offset-md-4"> Update Doctor's Record.</h2>
+  <div class="card col-md-4 mt-4 offset-md-4 card card-body">
+
+    <form [formGroup]="doctorForm">
+
+      <div class="form-group">
+        <label for="doc_id" style="color: black; font-weight: bold;">Doctor ID</label>
+        <input type="number" class="form-control" id="doc_id" name="doc_id" formControlName="" value="{{id.id}}"
+          disabled>
+        <!-- <div style="color:red;" *ngIf="regForm.get('pname').value.length<4">Enter atleast 4 characters </div>
+                <div style="color:red;" *ngIf="regForm.get('pname').value<1">product name cannot be empty</div> -->
+      </div>
+
+
+      <div class="form-group">
+        <label for="doc_name" style="color: black; font-weight: bold;"> Name</label>
+        <input type="text" class="form-control" id="doc_name" name="" formControlName="" value="{{doctors.doctorName}}">
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="doctorSpeciality " style="color: black; font-weight: bold;"> Speciality</label>
+        <input type="text" class="form-control" id="doctorSpeciality " name="doctorSpeciality"
+          formControlName="doctorSpeciality" value="{{doctors.doctorSpeciality}}">
+      </div>
+
+      <div class="form-group">
+        <label for="doctorProfile " style="color: black; font-weight: bold;"> Profile</label>
+        <input type="text" class="form-control" id="doctorProfile " name="doctorProfile" formControlName="doctorProfile"
+          value="{{doctors.doctorProfile}}">
+
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <label for="doctorQualification" style="color: black; font-weight: bold;"> Qualification</label>
+        <input type="text" class="form-control" id="doctorQualification" name="doctorQualification"
+          formControlName="doctorQualification" value="{{doctors.doctorQualification}}">
+
+      </div>
+
+      <div class="form-group">
+        <label for="doctorEmail" style="color: black; font-weight: bold;"> Email </label>
+        <input type="text" class="form-control" id="doctorEmail" name="doctorEmail" formControlName="doctorEmail"
+          value="{{doctors.doctorEmail}}">
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="doctorPassword" style="color: black; font-weight: bold;"> Password </label>
+        <input type="password" class="form-control" id="doctorPassword" name="doctorPassword"
+          formControlName="doctorPassword">
+
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-info float-right " name="submit"
+        (click)="updateData(id.id,doctorForm.value)">Update Doctor</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+    </form>
+  </div>
+  <br><br><br>
+</body>
+
+</html>

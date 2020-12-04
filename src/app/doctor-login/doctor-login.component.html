@@ -1,0 +1,26 @@
+<h3 style="text-align: center;">Doctor Login</h3>
+<div class="card col-md-4 offset-md-4 mt-5">
+  <div style="width: 100%;">
+    <form [formGroup]="regForm">
+      <div class="form-group">
+        <label for="doctorEmail">Email Address</label>
+        <input type="doctorEmail" class="form-control" id="doctorEmail" name="doctorEmail" formControlName="doctorEmail"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="doctorPassword">Password</label>
+        <input type="password" class="form-control" id="doctorPassword" name="doctorPassword"
+          formControlName="doctorPassword" required>
+      </div>
+      <button type="submit" class="btn btn-secondary" [disabled]="regForm.invalid"
+        (click)="loginDataToService(regForm.value)">Login</button>
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+
+
+    </form>
+  </div>
+</div>
+<footer>
+  <p>Quinnox Healthcare, Copyright &copy; 2020</p>
+</footer>
+<router-outlet></router-outlet>

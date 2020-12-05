@@ -18,3 +18,19 @@ a:hover {
 a {
   cursor: pointer;
 }
+
+h5:hover {
+  color: grey;
+}
+
+h5 {
+  cursor: pointer;
+}
+
+h5 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.placeholder {
+  margin-left: 400px;
+}

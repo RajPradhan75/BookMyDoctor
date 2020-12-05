@@ -103,4 +103,7 @@ export class DoctorDashboardComponent implements OnInit {
       window.location.reload();
     });
   }
+  backpage() {
+    window.location.reload();
+  }
 }
